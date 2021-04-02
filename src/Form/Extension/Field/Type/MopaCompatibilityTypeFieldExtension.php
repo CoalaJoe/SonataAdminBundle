@@ -67,7 +67,7 @@ class MopaCompatibilityTypeFieldExtension extends AbstractTypeExtension
      *
      * @phpstan-return class-string<FormTypeInterface>[]
      */
-    public static function getExtendedTypes()
+    public static function getExtendedTypes(): iterable
     {
         return [FormType::class];
     }

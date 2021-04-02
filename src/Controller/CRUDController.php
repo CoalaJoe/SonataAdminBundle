@@ -53,9 +53,11 @@ use Symfony\Component\Security\Csrf\CsrfToken;
 class CRUDController implements ContainerAwareInterface
 {
     // NEXT_MAJOR: Don't use these traits anymore (inherit from Controller instead)
-    use ContainerAwareTrait, ControllerTrait {
+    use ContainerAwareTrait;
+    /*
+         ControllerTrait {
         ControllerTrait::render as originalRender;
-    }
+    }*/
 
     /**
      * @var \Symfony\Component\DependencyInjection\ContainerInterface
